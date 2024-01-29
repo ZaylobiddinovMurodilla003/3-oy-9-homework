@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  align-items: center;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+table {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-flow: column;
+  border-collapse: collapse;
+}
+
+.caption {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  width: 130px;
+  text-align: center;
+}
+
+th {
+  padding: 5px 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+.green-bg {
+  background-color: yellowgreen;
+}
+
+.gray-bg {
+  background-color: rgb(182, 208, 247);
+  /* color:; */
+}
+
+.deepskyblue-bg {
+  background-color: deepskyblue;
+}
+
+.cornflowerblue-bg {
+  background-color: cornflowerblue;
+}
+
+.yellow-bg {
+  background-color: yellow;
+}
+
+.red-bg {
+  background-color: red;
+}
+
+.orange-bg {
+  background-color: orange;
+}
+
+.dioganal {
+  position: relative;
+}
+
+.dioganal::before {
+  content: "";
+  display: inline-block;
+  background-color: black;
+  height: 1px;
+  width: 265px;
+  position: absolute;
+  transform: rotate(-12deg);
+  left: -3px;
+}
+
+.dioganal::after {
+  content: "";
+  display: inline-block;
+  background-color: black;
+  height: 1px;
+  width: 265px;
+  position: absolute;
+  transform: rotate(12deg);
+  left: -3px;
+}
